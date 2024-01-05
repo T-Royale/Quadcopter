@@ -1,0 +1,13 @@
+For this project I made my own custom radio remote with an Arduino NANO and two 433Mhz radio modules wich are the transmitter and the receiver.
+
+For the structure of the remote I 3D printed my own case (I will also leave the stl file in the repo) I used four NO buttons, a switch to turn it on and off, a LED and of course a 3.7V 1A battery.
+
+The bottons I bought had a few problems on the connections, this problem made that when I tested it and tried to read it's state via arduino most times it was reading it wrong, maybe beacuse of mechanical problems on the switch, that's why the code got so long because I had to add a "Debouncing mecanism" so the board could detect if the signal was actually there.
+
+This can also happen to your buttons so you have to take this into acount.
+
+The botton to move the drone forward must be connected to digital pin 5, the one to move backward to pin 3, the one to move to the left at pin 2 and the one to move to the right to pin 4.
+
+The signal pin of the radio transmitter must be connected to pin 6.
+
+Once everything done, you just have to upload the code to your arduino board and test it out.
