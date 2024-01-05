@@ -1,10 +1,10 @@
 #include <VirtualWire.h>
 
 //Button Pinout//
-  const char ButtonUp = 3;
-  const char ButtonDown = 4;
-  const char ButtonLeft = 5;
-  const char ButtonRight = 6;
+  const char ButtonUp = 5;
+  const char ButtonDown = 3;
+  const char ButtonLeft = 2;
+  const char ButtonRight = 4;
 //---DEBOUNCING--//
   const int DebounceDelay = 200;
 //Debouncing (ButtonUp)//
@@ -24,7 +24,7 @@
   bool LastButtonRightState = true;
   unsigned long LastButtonRightTime;
 //Radio Module Pinout//
-  #define Radio_Tx 7
+  #define Radio_Tx 6
 //Radio signals for each button//
   unsigned char ButtonUpSignal[] = "Up";
   unsigned char ButtonDownSignal[] = "Down";
